@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>配置hexo写博客 | Shmilee&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Shmilee">
+    
+
+    
+    <meta name="description" content="Welcome to Hexo! This is a very fast, simple &amp;amp; powerful blog post, powered by Node.js. Check documentation to learn how to use.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="配置hexo写博客">
+<meta property="og:url" content="http://shmilee.github.io/2013/10-03-2013-10-03-配置hexo写博客.html">
+<meta property="og:site_name" content="Shmilee's Blog">
+<meta property="og:description" content="Welcome to Hexo! This is a very fast, simple &amp;amp; powerful blog post, powered by Node.js. Check documentation to learn how to use.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="配置hexo写博客">
+<meta name="twitter:description" content="Welcome to Hexo! This is a very fast, simple &amp;amp; powerful blog post, powered by Node.js. Check documentation to learn how to use.">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Shmilee&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.png">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.png">
+    
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head></html>
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Shmilee&#39;s Blog" title="Shmilee&#39;s Blog"></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Shmilee&#39;s Blog">Shmilee&#39;s Blog</a></h1>
+				<h2 class="blog-motto">两情久长，一起走过</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索">
+						<input type="hidden" name="q" value="site:shmilee.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</ul></nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2013/10-03-2013-10-03-配置hexo写博客.html" title="配置hexo写博客" itemprop="url">配置hexo写博客</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://shmilee.github.io/about" title="Shmilee" target="_blank" itemprop="author">Shmilee</a>
+		
+  </p><p class="article-time">
+    <time datetime="2013-10-03T06:49:14.000Z" itemprop="datePublished"> 发表于 2013-10-03</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank" rel="external">Hexo</a>! This is a very fast, simple &amp; powerful blog post, powered by Node.js. Check <a href="http://zespia.tw/hexo/docs" target="_blank" rel="external">documentation</a> to learn how to use.</p>
+<a id="more"></a>
+<h2 id="一安装hexo">一、安装hexo</h2>
+<p>首先，安装<code>hexo</code>的依赖<code>git</code>和<code>node.js</code>，archlinux下包的名称为<code>git</code>和<code>nodejs</code>。然后，有两种方式安装<code>hexo</code>：<br> (1)用<code>npm</code>安装;<br> (2)安装AUR上的<code>nodejs-hexo</code>。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo pacman -S git nodejs</span><br><span class="line">$ npm install -g hexo <span class="comment">#(1)</span></span><br><span class="line">$ yaourt -S nodejs-hexo <span class="comment">#(2)</span></span><br></pre></td></tr></table></figure></p>
+<p>以上也可以一步到位： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yaourt -S git nodejs nodejs-hexo</span><br></pre></td></tr></table></figure></p>
+<p>安装好之后，便可以初始化一个工作目录。执行 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init target_dir</span><br></pre></td></tr></table></figure></p>
+<p>或者， <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> target_dir</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
+<h2 id="二安装hexo插件">二、安装hexo插件</h2>
+<p><code>hexo</code>使用时，需要一些plugins，记录如下。更多plugins请查看<a href="https://github.com/tommy351/hexo/wiki/Plugins" target="_blank" rel="external">这里</a>。<br> 注意：以下命令都是在hexo建立的工作目录下执行。安装完成，如果要启用，请将其添加到总配置文件<code>_config.yml</code>，下文会提到。</p>
+<p>RSS Feed： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure></p>
+<p>Sitemap： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure></p>
+<p>Migrate from wordpress: <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure></p>
+<p>Use vim to highlight code in your markdown source: <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-tag-vimhighlight --save</span><br></pre></td></tr></table></figure></p>
+<p>Automatic summarization： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install git://github.com/vfasky/hexo-summarizer.git</span><br></pre></td></tr></table></figure></p>
+<p>gzip hexo static files, in order to avoid Apache2/Nginx gzipping at the fly (better performance) <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-gzip --save</span><br></pre></td></tr></table></figure></p>
+<h2 id="三安装hexo主题">三、安装hexo主题</h2>
+<p>主页：https://github.com/tommy351/hexo/wiki/Themes</p>
+<p>选择：<code>light</code>（默认自带）、<code>greyshade</code>（修改使用）、<code>modernist</code>（显示代码不错） <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> target_dir</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/nuklly/hexo-theme-greyshade.git themes/greyshade</span><br><span class="line">$ git <span class="built_in">clone</span> git://github.com/heroicyang/hexo-theme-modernist.git themes/modernist</span><br></pre></td></tr></table></figure></p>
+<h2 id="四hexo配置">四、hexo配置</h2>
+<p>这是主要部分，配置加修改，所有工作目录下的文件（不包括生成的发布内容），都保存到github上的此repo中，生成的静态网站发布到指定位置。</p>
+<h4 id="配置-_config.yml">1. 配置 _config.yml</h4>
+<p>主要是设定站点、插件、主题、发布地址等。</p>
+<p>结果： <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"># Hexo Configuration</span><br><span class="line">## <span class="string">Docs:</span> <span class="string">http:</span><span class="comment">//zespia.tw/hexo/docs/configure.html</span></span><br><span class="line">## <span class="string">Source:</span> <span class="string">https:</span><span class="comment">//github.com/tommy351/hexo/</span></span><br><span class="line"></span><br><span class="line"># Site</span><br><span class="line"><span class="string">title:</span> 两情久长，一起走过</span><br><span class="line"><span class="string">subtitle:</span> 处严寒而以香袭人，受咏赞却与世无言</span><br><span class="line"><span class="string">description:</span> 处严寒而以香袭人，受咏赞却与世无言</span><br><span class="line"><span class="string">author:</span> Shmilee</span><br><span class="line"><span class="string">email:</span> shmilee.zju<span class="annotation">@gmail</span>.com</span><br><span class="line"><span class="string">language:</span> zh-CN</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">## If your site is put <span class="keyword">in</span> a subdirectory, set url <span class="keyword">as</span> <span class="string">'http://yoursite.com/child'</span> and root <span class="keyword">as</span> <span class="string">'/child/'</span></span><br><span class="line"><span class="string">url:</span> <span class="string">http:</span><span class="comment">//shmilee.github.io</span></span><br><span class="line"><span class="string">root:</span> /</span><br><span class="line"><span class="string">permalink:</span> :year/:month-:day-:title.html</span><br><span class="line"><span class="string">tag_dir:</span> tags</span><br><span class="line"><span class="string">archive_dir:</span> archives</span><br><span class="line"><span class="string">category_dir:</span> categories</span><br><span class="line"><span class="string">code_dir:</span> downloads/code</span><br><span class="line"></span><br><span class="line"># Writing</span><br><span class="line"><span class="string">new_post_name:</span> :year/:month-:day-:title.md # File name of <span class="keyword">new</span> posts</span><br><span class="line"><span class="string">default_layout:</span> post</span><br><span class="line"><span class="string">auto_spacing:</span> <span class="literal">false</span> # Add spaces between asian characters and western characters</span><br><span class="line"><span class="string">titlecase:</span> <span class="literal">false</span> # Transform title into titlecase</span><br><span class="line"><span class="string">external_link:</span> <span class="literal">true</span> # Open external links <span class="keyword">in</span> <span class="keyword">new</span> tab</span><br><span class="line"><span class="string">max_open_file:</span> <span class="number">100</span></span><br><span class="line"><span class="string">multi_thread:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">filename_case:</span> <span class="number">0</span> #Transform filename into (<span class="number">1</span>) lower <span class="keyword">case</span> or (<span class="number">2</span>) upper <span class="keyword">case</span></span><br><span class="line"><span class="string">highlight:</span></span><br><span class="line"><span class="label">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="label">  line_number:</span> <span class="literal">true</span></span><br><span class="line"><span class="label">  tab_replace:</span></span><br><span class="line"></span><br><span class="line"># Category &amp; Tag</span><br><span class="line"><span class="string">default_category:</span> uncategorized</span><br><span class="line"><span class="string">category_map:</span></span><br><span class="line"><span class="string">tag_map:</span></span><br><span class="line"></span><br><span class="line"># Archives 默认<span class="number">2</span>,修改为<span class="number">1</span>,只列出标题</span><br><span class="line">## <span class="number">2</span>: Enable pagination</span><br><span class="line">## <span class="number">1</span>: Disable pagination</span><br><span class="line">## <span class="number">0</span>: Fully Disable</span><br><span class="line"><span class="string">archive:</span> <span class="number">1</span></span><br><span class="line"><span class="string">category:</span> <span class="number">1</span></span><br><span class="line"><span class="string">tag:</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"># Server</span><br><span class="line">## Hexo uses Connect <span class="keyword">as</span> a server</span><br><span class="line">## You can customize the logger format <span class="keyword">as</span> defined <span class="keyword">in</span></span><br><span class="line">## <span class="string">http:</span><span class="comment">//www.senchalabs.org/connect/logger.html</span></span><br><span class="line"><span class="string">port:</span> <span class="number">4000</span></span><br><span class="line"><span class="string">logger:</span> <span class="literal">false</span></span><br><span class="line"><span class="string">logger_format:</span></span><br><span class="line"></span><br><span class="line"># Date / Time format</span><br><span class="line">## Hexo uses Moment.js to parse and display date</span><br><span class="line">## You can customize the date format <span class="keyword">as</span> defined <span class="keyword">in</span></span><br><span class="line">## <span class="string">http:</span><span class="comment">//momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="string">date_format:</span> MMM D YYYY</span><br><span class="line"><span class="string">time_format:</span> <span class="string">H:</span><span class="string">mm:</span>ss</span><br><span class="line"></span><br><span class="line"># Pagination</span><br><span class="line">## Set per_page to <span class="number">0</span> to disable pagination</span><br><span class="line"><span class="string">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="string">pagination_dir:</span> page</span><br><span class="line"></span><br><span class="line"># Disqus</span><br><span class="line"><span class="string">disqus_shortname:</span></span><br><span class="line"></span><br><span class="line"># Extensions</span><br><span class="line">## <span class="string">Plugins:</span> <span class="string">https:</span><span class="comment">//github.com/tommy351/hexo/wiki/Plugins</span></span><br><span class="line">## <span class="string">Themes:</span> <span class="string">https:</span><span class="comment">//github.com/tommy351/hexo/wiki/Themes</span></span><br><span class="line"><span class="string">theme:</span> greyshade #light #modernist</span><br><span class="line"><span class="string">exclude_generator:</span></span><br><span class="line"><span class="label"></span><br><span class="line">plugins:</span></span><br><span class="line">- hexo-generator-feed</span><br><span class="line">- hexo-generator-sitemap</span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line">## <span class="string">Docs:</span> <span class="string">http:</span><span class="comment">//zespia.tw/hexo/docs/deploy.html</span></span><br><span class="line"># 虽然推荐github的repository用https，但SSH clone URL可以避免每次输密码</span><br><span class="line"><span class="string">deploy:</span></span><br><span class="line"><span class="label">  type:</span> github</span><br><span class="line"><span class="label">  repository:</span> git<span class="annotation">@github</span>.<span class="string">com:</span>shmilee/shmilee.github.io.git</span><br><span class="line"><span class="label">  branch:</span> master</span><br></pre></td></tr></table></figure></p>
+<h4 id="多说评论">2. 多说评论</h4>
+<ol style="list-style-type: decimal">
+<li><p>注册:http://duoshuo.com/ , 获得通用代码.</p></li>
+<li><p>主题目录内一般自带disqus,比照相关代码添加duoshuo</p></li>
+</ol>
+<ul>
+<li><a href="https://github.com/shmilee/blog_with_hexo/commit/554a7e01f21f4927c42f93a316b8d750e5bb2704" target="_blank" rel="external">greyshade添加参考</a></li>
+</ul>
+<h4 id="百度分享">3. 百度分享</h4>
+<ol style="list-style-type: decimal">
+<li><p>到<a href="http://share.baidu.com/code" target="_blank" rel="external">百度分享</a>,获取代码.</p></li>
+<li><p>添加到主题, <a href="https://github.com/shmilee/blog_with_hexo/commit/94877388292384854fcd493c8bf1628750e55092" target="_blank" rel="external">greyshade参考</a></p></li>
+</ol>
+<h4 id="theme杂项">4. theme杂项</h4>
+<ul>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/7f07ab9ce1fb41b9018b9ea4e5beefb0de2874ec" target="_blank" rel="external">theme:简体中文</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/6703fccebdc44340e30e5dcc317ad9c949fbc13b" target="_blank" rel="external">添加widgets</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/a94501d283725041057a6e9adb6dc4e2f9085680" target="_blank" rel="external">默认生成categories配置项</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/efa288a463b9f4b94131fe4051dc7a05f2bd7189" target="_blank" rel="external">归档类页面添加底边栏,存放widgets</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/c7088b6e895d8f67c434122f6dd4851a595337c3" target="_blank" rel="external">修改menu + aboutme样式</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/2ca18381a123eae207bca4cf02b841477f031d95" target="_blank" rel="external">social链接，添加微博和email</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/3b194898cbdbc6685400532855557871a1727e2a" target="_blank" rel="external">blockquote 配色</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/e21243bd3213a44055dd992652c0a6594a6fc417" target="_blank" rel="external">404 Page</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/a3985b49fe61ade3acf40425622d574945ace251" target="_blank" rel="external">forkme on github</a></p></li>
+</ul>
+<p>TODO: 高亮 css; md文本格式</p>
+<h4 id="网站统计百度或google">5. 网站统计：百度或google</h4>
+<h2 id="五hexo常用命令简介">五、hexo常用命令简介</h2>
+<p>来自：http://zespia.tw/hexo/docs/commands.html</p>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init [folder] <span class="comment"># 初始化一个网站</span></span><br><span class="line">$ hexo new [layout] &lt;title&gt; <span class="comment"># 创建新文章</span></span><br><span class="line">$ hexo generate <span class="comment"># 生成静态网页</span></span><br><span class="line">$ hexo server <span class="comment"># 启动服务，以便本地查看</span></span><br><span class="line">$ hexo deploy <span class="comment"># 发布你的blog</span></span><br><span class="line">$ hexo migrate wordpress wordpress.<span class="number">2013</span>-<span class="number">10</span>-<span class="number">03</span>.xml <span class="comment"># 从wp迁移，效果差，仍需要手动调整</span></span><br><span class="line">$ hexo clean <span class="comment"># 清理缓存(db.json)和生成的文件(public)</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p><code>init</code>： If folder isn’t defined, Hexo will setup the website at the current directory. Hexo has 3 default layouts: <code>post</code>, <code>page</code> and <code>draft</code>. Other layouts will be saved in source/_posts by default.</p></li>
+<li><p><code>new</code>： If layout isn’t defined, it’ll be default_layout setting. If the title is more than one word, wrap it with quotation marks.</p></li>
+<li><p><code>generate</code> option： <code>-d</code> Deploy after generate done; <code>-w</code> Watch file changes.</p></li>
+<li><p><code>deploy</code> option： <code>--setup</code> Setup without deployment; <code>--generate</code> Generate before deployment.</p></li>
+</ul>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="../categories/computer/">computer</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/hexo/">hexo</a>
+  </div>
+
+</div>
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://shmilee.github.io/2013/10-03-2013-10-03-配置hexo写博客.html" data-title="配置hexo写博客 | Shmilee&#39;s Blog" data-tsina="1005052114128812" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	<nav class="article-nav clearfix">
+ 
+ <div class="prev">
+ <a href="/2013/10-04-2013-10-04-mathtest.html" title="mathtest">
+  <strong>上一篇：</strong><br>
+  <span>
+  mathtest</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2012/11-18-2012-11-18-ssh方式的翻墙.html" title="ssh方式的翻墙">
+ <strong>下一篇：</strong><br> 
+ <span>ssh方式的翻墙
+</span>
+</a>
+</div>
+
+</nav>
+	<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2013/10-03-2013-10-03-配置hexo写博客.html" data-title="配置hexo写博客" data-url="http://shmilee.github.io/2013/10-03-2013-10-03-配置hexo写博客.html"></div>
+</section>
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一安装hexo"><span class="toc-number">1.</span> <span class="toc-text">一、安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二安装hexo插件"><span class="toc-number">2.</span> <span class="toc-text">二、安装hexo插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三安装hexo主题"><span class="toc-number">3.</span> <span class="toc-text">三、安装hexo主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四hexo配置"><span class="toc-number">4.</span> <span class="toc-text">四、hexo配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#配置-_config.yml"><span class="toc-number">4.0.1.</span> <span class="toc-text">1. 配置 _config.yml</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多说评论"><span class="toc-number">4.0.2.</span> <span class="toc-text">2. 多说评论</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#百度分享"><span class="toc-number">4.0.3.</span> <span class="toc-text">3. 百度分享</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#theme杂项"><span class="toc-number">4.0.4.</span> <span class="toc-text">4. theme杂项</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#网站统计百度或google"><span class="toc-number">4.0.5.</span> <span class="toc-text">5. 网站统计：百度或google</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#五hexo常用命令简介"><span class="toc-number">5.</span> <span class="toc-text">五、hexo常用命令简介</span></a></li>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  <div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/computer/" title="computer">computer<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/essay/" title="essay">essay<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+  <div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/翻墙/" title="翻墙">翻墙<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/test/" title="test">test<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/android/" title="android">android<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/convert/" title="convert">convert<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/mplayer/" title="mplayer">mplayer<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/风景旧曾谙/" title="风景旧曾谙">风景旧曾谙<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer">
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello,I&#39;m LiShengming. For now I&#39;m a graduate student in ZJU. <br>
+			I&#39;ll share my learning experience with you at this blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/shmilee" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/shmilee" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:shmilee.zju@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		
+		<a href="http://shmilee.github.io/about" target="_blank" title="Shmilee">Shmilee</a>
+		
+		</p>
+</div></footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"shmilee-github"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"></a>
+	</div>
+	<script src="/js/totop.js"></script>
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+<!-- MathJax End -->
+  </body>

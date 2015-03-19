@@ -1,0 +1,481 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>convert使用简介 | Shmilee&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Shmilee">
+    
+
+    
+    <meta name="description" content="最近赶毕业设计，结果出了很多图。要相互比较，还有做动画看物理量随时间的变化。
+结果保存在ps文件中，一个包含7张图，每图一个物理量。ps文件是按时间i命名的。为了批量处理，决定用convert配合shell脚本转换他们。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="convert使用简介">
+<meta property="og:url" content="http://shmilee.github.io/2012/05-19-2012-05-19-convert使用简介.html">
+<meta property="og:site_name" content="Shmilee's Blog">
+<meta property="og:description" content="最近赶毕业设计，结果出了很多图。要相互比较，还有做动画看物理量随时间的变化。
+结果保存在ps文件中，一个包含7张图，每图一个物理量。ps文件是按时间i命名的。为了批量处理，决定用convert配合shell脚本转换他们。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="convert使用简介">
+<meta name="twitter:description" content="最近赶毕业设计，结果出了很多图。要相互比较，还有做动画看物理量随时间的变化。
+结果保存在ps文件中，一个包含7张图，每图一个物理量。ps文件是按时间i命名的。为了批量处理，决定用convert配合shell脚本转换他们。">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Shmilee&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.png">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.png">
+    
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head></html>
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Shmilee&#39;s Blog" title="Shmilee&#39;s Blog"></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Shmilee&#39;s Blog">Shmilee&#39;s Blog</a></h1>
+				<h2 class="blog-motto">两情久长，一起走过</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索">
+						<input type="hidden" name="q" value="site:shmilee.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</ul></nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2012/05-19-2012-05-19-convert使用简介.html" title="convert使用简介" itemprop="url">convert使用简介</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://shmilee.github.io/about" title="Shmilee" target="_blank" itemprop="author">Shmilee</a>
+		
+  </p><p class="article-time">
+    <time datetime="2012-05-19T08:49:08.000Z" itemprop="datePublished"> 发表于 2012-05-19</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<p>最近赶毕业设计，结果出了很多图。要相互比较，还有做动画看物理量随时间的变化。</p>
+<p>结果保存在ps文件中，一个包含7张图，每图一个物理量。ps文件是按时间i命名的。为了批量处理，决定用convert配合shell脚本转换他们。</p>
+<a id="more"></a>
+<h2 id="安装使用imagemagick">安装使用ImageMagick</h2>
+<h4 id="直接将ps或者pdf文件转成jpg">1. 直接将PS或者PDF文件转成jpg</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert -density <span class="number">150</span> -quality <span class="number">100</span> -resize <span class="number">800</span>x <span class="string">"file.ps"</span> <span class="string">"result.jpg"</span></span><br></pre></td></tr></table></figure>
+<p>将file.pdf文件输出为result.jpg文件<br>如果PDF有多页，图像将自动以result-0.jpg’ , ‘result-1.jpg’…形式输出。</p>
+<blockquote>
+<p>-density 图像分辨率<br> -quality 图像质量</p>
+</blockquote>
+<h4 id="图片截取">2. 图片截取</h4>
+<p>指定位置，由于每张图只占一页的部分，靠近左下。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert -crop widthxheight&#123;+-&#125;x&#123;+-&#125;y&#123;%&#125;</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>width 子图片宽度<br> height 子图片高度<br> x 为正数时为从区域左上角的x坐标,为负数时,左上角坐标为0,然后从截出的子图片右边减去x象素宽度.<br> y 为正数时为从区域左上角的y坐标,为负数时,左上角坐标为0,然后从截出的子图片上边减去y象素高度.</p>
+</blockquote>
+<p>如: <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ convert -crop <span class="number">300</span>x400+<span class="number">10</span>+<span class="number">10</span> src.jpg dest.jpg <span class="comment"># 从src.jpg坐标为x:10 y:10截取300x400的图片存为dest.jpg</span></span><br><span class="line"></span><br><span class="line">$ convert -crop <span class="number">300</span>x400-<span class="number">10</span>+<span class="number">10</span> src.jpg dest.jpg <span class="comment"># 从src.jpg坐标为x:0 y:10截取290x400的图片存为dest.jpg</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="生成gif">3. 生成gif</h4>
+<blockquote>
+<p>把当前目录下的所有bmp文件合成一个gif图片动画, 每帧间隔0ms, 重复播放.<br> -delay n 迟延n*10毫秒 -loop n 播放n轮, 0表示不断地重复播放</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert -delay <span class="number">0</span> *.bmp -loop <span class="number">0</span> animated.gif</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>So to create an animation we use the convert command</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert -delay <span class="number">50</span> frame1.gif frame1.gif frame1.gif -loop <span class="number">0</span> animated.gif</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Also if we want to add a pause between each loop</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert -delay <span class="number">50</span> frame1.gif -delay <span class="number">100</span> frame1.gif -delay <span class="number">150</span> frame1.gif -loop <span class="number">0</span> -pause <span class="number">200</span> animated.gif</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Also using convert we can combine 2 animated gifs</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert anim1.gif anim2.gif combined.gif</span><br></pre></td></tr></table></figure>
+<h4 id="合并图片">4. 合并图片</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 横向</span></span><br><span class="line">$ convert +append <span class="number">6</span>-<span class="variable">$f</span>.png <span class="number">7</span>-<span class="variable">$f</span>.png tmp4.png</span><br><span class="line"><span class="comment"># 纵向</span></span><br><span class="line">$ convert -append tmp1.png tmp2.png tmp3.png tmp4.png c<span class="variable">$f</span>.png</span><br></pre></td></tr></table></figure>
+<h2 id="最终的脚本">最终的脚本</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span></span><br><span class="line"><span class="comment">## ps转换为png,png适合单独引用</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"converting png ..."</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="number">0</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">convert -crop <span class="number">440</span>x210+<span class="number">60</span>+<span class="number">440</span> -quality <span class="number">100</span> <span class="variable">$f</span>.ps <span class="variable">$f</span>.png</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">echo</span>  <span class="string">"composit 8 png files"</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="number">0</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">convert +append <span class="number">0</span>-<span class="variable">$f</span>.png <span class="number">1</span>-<span class="variable">$f</span>.png tmp1.png</span><br><span class="line">convert +append <span class="number">2</span>-<span class="variable">$f</span>.png <span class="number">3</span>-<span class="variable">$f</span>.png tmp2.png</span><br><span class="line">convert +append <span class="number">4</span>-<span class="variable">$f</span>.png <span class="number">5</span>-<span class="variable">$f</span>.png tmp3.png</span><br><span class="line">convert +append <span class="number">6</span>-<span class="variable">$f</span>.png <span class="number">7</span>-<span class="variable">$f</span>.png tmp4.png</span><br><span class="line">convert -append tmp1.png tmp2.png tmp3.png tmp4.png c<span class="variable">$f</span>.png</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="comment">## ps转换成jpg，用于制作动画</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"converting jpg ..."</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="number">0</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">convert -crop <span class="number">440</span>x210+<span class="number">60</span>+<span class="number">440</span> -quality <span class="number">100</span> <span class="variable">$f</span>.ps <span class="variable">$f</span>.jpg</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="comment">## jpg做成gif动画，8张</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"converting gif ..."</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="number">0</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span>;<span class="keyword">do</span> convert -delay <span class="number">50</span> *-<span class="variable">$f</span>.jpg -loop <span class="number">0</span> <span class="variable">$f</span>.gif; <span class="keyword">done</span></span><br><span class="line"><span class="comment">## 删除jpg文件</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"rm all jpg files, tmp files"</span></span><br><span class="line">rm *.jpg</span><br><span class="line">rm tmp*.png</span><br></pre></td></tr></table></figure>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="../categories/computer/">computer</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/convert/">convert</a>
+  </div>
+
+</div>
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://shmilee.github.io/2012/05-19-2012-05-19-convert使用简介.html" data-title="convert使用简介 | Shmilee&#39;s Blog" data-tsina="1005052114128812" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	<nav class="article-nav clearfix">
+ 
+ <div class="prev">
+ <a href="/2012/10-12-2012-10-12goagent.html" title="goagent">
+  <strong>上一篇：</strong><br>
+  <span>
+  goagent</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2012/02-21-2012-02-21-mplayer网络视频.html" title="mplayer网络视频">
+ <strong>下一篇：</strong><br> 
+ <span>mplayer网络视频
+</span>
+</a>
+</div>
+
+</nav>
+	<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2012/05-19-2012-05-19-convert使用简介.html" data-title="convert使用简介" data-url="http://shmilee.github.io/2012/05-19-2012-05-19-convert使用简介.html"></div>
+</section>
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装使用imagemagick"><span class="toc-number">1.</span> <span class="toc-text">安装使用ImageMagick</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#直接将ps或者pdf文件转成jpg"><span class="toc-number">1.0.1.</span> <span class="toc-text">1. 直接将PS或者PDF文件转成jpg</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#图片截取"><span class="toc-number">1.0.2.</span> <span class="toc-text">2. 图片截取</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#生成gif"><span class="toc-number">1.0.3.</span> <span class="toc-text">3. 生成gif</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#合并图片"><span class="toc-number">1.0.4.</span> <span class="toc-text">4. 合并图片</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#最终的脚本"><span class="toc-number">2.</span> <span class="toc-text">最终的脚本</span></a></li>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  <div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/computer/" title="computer">computer<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/essay/" title="essay">essay<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+  <div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/翻墙/" title="翻墙">翻墙<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/test/" title="test">test<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/android/" title="android">android<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/convert/" title="convert">convert<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/mplayer/" title="mplayer">mplayer<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/风景旧曾谙/" title="风景旧曾谙">风景旧曾谙<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer">
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello,I&#39;m LiShengming. For now I&#39;m a graduate student in ZJU. <br>
+			I&#39;ll share my learning experience with you at this blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/shmilee" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/shmilee" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:shmilee.zju@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		
+		<a href="http://shmilee.github.io/about" target="_blank" title="Shmilee">Shmilee</a>
+		
+		</p>
+</div></footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"shmilee-github"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"></a>
+	</div>
+	<script src="/js/totop.js"></script>
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+<!-- MathJax End -->
+  </body>

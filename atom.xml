@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Shmilee's Blog]]></title>
+  <subtitle><![CDATA[两情久长，一起走过]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://shmilee.github.io/"/>
+  <updated>2015-03-19T12:59:18.000Z</updated>
+  <id>http://shmilee.github.io/</id>
+  
+  <author>
+    <name><![CDATA[Shmilee]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[mathtest]]></title>
+    <link href="http://shmilee.github.io/2013/10-04-2013-10-04-mathtest.html"/>
+    <id>http://shmilee.github.io/2013/10-04-2013-10-04-mathtest.html</id>
+    <published>2013-10-04T02:02:00.000Z</published>
+    <updated>2015-03-19T12:59:18.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="初等函数">初等函数</h1>
+<h2 id="常数函数幂函数">常数函数、幂函数</h2>
+<p>形如<span class="math">\(f(x)=x^\alpha,\,(0&lt;x&lt;+\infty,\alpha\ne 0)\)</span>的函数。</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math">\(\alpha &gt;0\)</span>时，f(x)严格递增，<span class="math">\(\alpha &lt;0\)</span>时，f(x)严格递减。<span class="math">\(\alpha=0\)</span>时，f(x)为常函数。</p></li>
+<li><p><span class="math">\(y=x^\alpha\)</span>与<span class="math">\(y=x^\frac{1}{\alpha}\)</span>互为反函数，关于<span class="math">\(\alpha=0\)</span>时的f(x)=x对称。</p></li>
+</ol>
+<a id="more"></a>
+<h2 id="指数函数对数函数">指数函数、对数函数</h2>
+<p>指数函数<span class="math">\(f(x)=\alpha^x,\,(\alpha&gt;0,\alpha\ne 1)\)</span>与对数函数<span class="math">\(f(x)=\log_\alpha x,\,(\alpha&gt;0,\alpha\ne 1,0&lt;x&lt;+\infty)\)</span>互为反函数。</p>
+<h2 id="三角函数">三角函数</h2>
+<h3 id="定义">定义</h3>
+<p>正弦：<span class="math">\(y=\sin x,\;x\in \mathrm{R}\)</span> 反正弦：<span class="math">\(y=\arcsin x,\;x\in [-1,1],\,y\in [-\frac{\pi}{2},\frac{\pi}{2}]\)</span></p>
+<p>余弦：<span class="math">\(y=\cos x,\;x\in \mathrm{R}\)</span> 反余弦：<span class="math">\(y=\arccos x,\;x\in [-1,1],\,y\in [0,\pi]\)</span></p>
+<p>正切：<span class="math">\(y=\tan x,\;x\ne\kappa\pi+\frac{\pi}{2},\,\kappa=0,\pm 1,\pm 2,\dots\)</span> 反正切：<span class="math">\(y=arctan x,\;x\in \mathrm{R},\,y\in (-\frac{\pi}{2},\frac{\pi}{2})\)</span></p>
+<p>余切：<span class="math">\(y=\cot x,\;x\ne\kappa\pi,\,\kappa=0,\pm 1,\pm 2,\dots\)</span> 反余切：<span class="math">\(y=arccot x,\;x\in \mathrm{R},\,y\in (0,\pi)\)</span></p>
+<h3 id="三角公式">三角公式</h3>
+<ul>
+<li><p>诱导公式<br>奇变偶不变，符号看象限。<span class="math">\(\quad {\alpha}\pm\kappa\frac{\pi}{2}\)</span></p></li>
+<li><p>倒数、商数与平方关系<br><span class="math">\(\tan x \cot x = 1 \quad \sec x \cos x = 1 \quad \csc x \sin x = 1\)</span> <span class="math">\(\sin^2 x + \cos^2 x = 1 \quad \sec^2 x - \tan^2 x = 1 \quad \csc^2 x - \cot^2 x = 1\)</span></p></li>
+<li><p>和差角公式<span class="math">\(\stackrel{\alpha = \beta = \frac{\gamma}{2}}{\Longrightarrow}\)</span> 倍角公式、半角公式 <span class="math">\[\begin{eqnarray*}
+\sin{(\alpha\pm\beta)} &amp; = &amp; \sin{\alpha}\cos{\beta} \pm \cos{\alpha}\sin{\beta}\\
+\cos{(\alpha\pm\beta)} &amp; = &amp; \cos{\alpha}\cos{\beta} \mp \sin{\alpha}\sin{\beta}\\
+\tan{(\alpha\pm\beta)} &amp; = &amp; \frac{\tan\alpha\pm\tan\beta}{1\mp\tan\alpha\tan\beta}
+\end{eqnarray*}
+\]</span></p></li>
+<li><p>和差化积(<span class="math">\(\alpha = \frac{\alpha+\beta}{2} + \frac{\alpha-\beta}{2},\,\beta = \frac{\alpha+\beta}{2} - \frac{\alpha-\beta}{2}\)</span>) <span class="math">\[\begin{eqnarray*}
+\tan{(\alpha\pm\beta)} &amp; = &amp; \frac{\tan\alpha\pm\tan\beta}{1\mp\tan\alpha\tan\beta}
+\end{eqnarray*}
+\]</span></p></li>
+</ul>]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="初等函数">初等函数</h1>
+<h2 id="常数函数幂函数">常数函数、幂函数</h2>
+<p>形如<span class="math">\(f(x)=x^\alpha,\,(0&lt;x&lt;+\infty,\alpha\ne 0)\)</span>的函数。</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math">\(\alpha &gt;0\)</span>时，f(x)严格递增，<span class="math">\(\alpha &lt;0\)</span>时，f(x)严格递减。<span class="math">\(\alpha=0\)</span>时，f(x)为常函数。</p></li>
+<li><p><span class="math">\(y=x^\alpha\)</span>与<span class="math">\(y=x^\frac{1}{\alpha}\)</span>互为反函数，关于<span class="math">\(\alpha=0\)</span>时的f(x)=x对称。</p></li>
+</ol>]]>
+    
+    </summary>
+    
+      <category term="test" scheme="http://shmilee.github.io/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[配置hexo写博客]]></title>
+    <link href="http://shmilee.github.io/2013/10-03-2013-10-03-%E9%85%8D%E7%BD%AEhexo%E5%86%99%E5%8D%9A%E5%AE%A2.html"/>
+    <id>http://shmilee.github.io/2013/10-03-2013-10-03-配置hexo写博客.html</id>
+    <published>2013-10-03T06:49:14.000Z</published>
+    <updated>2014-04-18T14:04:26.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank" rel="external">Hexo</a>! This is a very fast, simple &amp; powerful blog post, powered by Node.js. Check <a href="http://zespia.tw/hexo/docs" target="_blank" rel="external">documentation</a> to learn how to use.</p>
+<a id="more"></a>
+<h2 id="一安装hexo">一、安装hexo</h2>
+<p>首先，安装<code>hexo</code>的依赖<code>git</code>和<code>node.js</code>，archlinux下包的名称为<code>git</code>和<code>nodejs</code>。然后，有两种方式安装<code>hexo</code>：<br> (1)用<code>npm</code>安装;<br> (2)安装AUR上的<code>nodejs-hexo</code>。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo pacman -S git nodejs</span><br><span class="line">$ npm install -g hexo <span class="comment">#(1)</span></span><br><span class="line">$ yaourt -S nodejs-hexo <span class="comment">#(2)</span></span><br></pre></td></tr></table></figure></p>
+<p>以上也可以一步到位： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yaourt -S git nodejs nodejs-hexo</span><br></pre></td></tr></table></figure></p>
+<p>安装好之后，便可以初始化一个工作目录。执行 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init target_dir</span><br></pre></td></tr></table></figure></p>
+<p>或者， <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> target_dir</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
+<h2 id="二安装hexo插件">二、安装hexo插件</h2>
+<p><code>hexo</code>使用时，需要一些plugins，记录如下。更多plugins请查看<a href="https://github.com/tommy351/hexo/wiki/Plugins" target="_blank" rel="external">这里</a>。<br> 注意：以下命令都是在hexo建立的工作目录下执行。安装完成，如果要启用，请将其添加到总配置文件<code>_config.yml</code>，下文会提到。</p>
+<p>RSS Feed： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure></p>
+<p>Sitemap： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure></p>
+<p>Migrate from wordpress: <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure></p>
+<p>Use vim to highlight code in your markdown source: <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-tag-vimhighlight --save</span><br></pre></td></tr></table></figure></p>
+<p>Automatic summarization： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install git://github.com/vfasky/hexo-summarizer.git</span><br></pre></td></tr></table></figure></p>
+<p>gzip hexo static files, in order to avoid Apache2/Nginx gzipping at the fly (better performance) <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-gzip --save</span><br></pre></td></tr></table></figure></p>
+<h2 id="三安装hexo主题">三、安装hexo主题</h2>
+<p>主页：https://github.com/tommy351/hexo/wiki/Themes</p>
+<p>选择：<code>light</code>（默认自带）、<code>greyshade</code>（修改使用）、<code>modernist</code>（显示代码不错） <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> target_dir</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/nuklly/hexo-theme-greyshade.git themes/greyshade</span><br><span class="line">$ git <span class="built_in">clone</span> git://github.com/heroicyang/hexo-theme-modernist.git themes/modernist</span><br></pre></td></tr></table></figure></p>
+<h2 id="四hexo配置">四、hexo配置</h2>
+<p>这是主要部分，配置加修改，所有工作目录下的文件（不包括生成的发布内容），都保存到github上的此repo中，生成的静态网站发布到指定位置。</p>
+<h4 id="配置-_config.yml">1. 配置 _config.yml</h4>
+<p>主要是设定站点、插件、主题、发布地址等。</p>
+<p>结果： <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"># Hexo Configuration</span><br><span class="line">## <span class="string">Docs:</span> <span class="string">http:</span><span class="comment">//zespia.tw/hexo/docs/configure.html</span></span><br><span class="line">## <span class="string">Source:</span> <span class="string">https:</span><span class="comment">//github.com/tommy351/hexo/</span></span><br><span class="line"></span><br><span class="line"># Site</span><br><span class="line"><span class="string">title:</span> 两情久长，一起走过</span><br><span class="line"><span class="string">subtitle:</span> 处严寒而以香袭人，受咏赞却与世无言</span><br><span class="line"><span class="string">description:</span> 处严寒而以香袭人，受咏赞却与世无言</span><br><span class="line"><span class="string">author:</span> Shmilee</span><br><span class="line"><span class="string">email:</span> shmilee.zju<span class="annotation">@gmail</span>.com</span><br><span class="line"><span class="string">language:</span> zh-CN</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">## If your site is put <span class="keyword">in</span> a subdirectory, set url <span class="keyword">as</span> <span class="string">'http://yoursite.com/child'</span> and root <span class="keyword">as</span> <span class="string">'/child/'</span></span><br><span class="line"><span class="string">url:</span> <span class="string">http:</span><span class="comment">//shmilee.github.io</span></span><br><span class="line"><span class="string">root:</span> /</span><br><span class="line"><span class="string">permalink:</span> :year/:month-:day-:title.html</span><br><span class="line"><span class="string">tag_dir:</span> tags</span><br><span class="line"><span class="string">archive_dir:</span> archives</span><br><span class="line"><span class="string">category_dir:</span> categories</span><br><span class="line"><span class="string">code_dir:</span> downloads/code</span><br><span class="line"></span><br><span class="line"># Writing</span><br><span class="line"><span class="string">new_post_name:</span> :year/:month-:day-:title.md # File name of <span class="keyword">new</span> posts</span><br><span class="line"><span class="string">default_layout:</span> post</span><br><span class="line"><span class="string">auto_spacing:</span> <span class="literal">false</span> # Add spaces between asian characters and western characters</span><br><span class="line"><span class="string">titlecase:</span> <span class="literal">false</span> # Transform title into titlecase</span><br><span class="line"><span class="string">external_link:</span> <span class="literal">true</span> # Open external links <span class="keyword">in</span> <span class="keyword">new</span> tab</span><br><span class="line"><span class="string">max_open_file:</span> <span class="number">100</span></span><br><span class="line"><span class="string">multi_thread:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">filename_case:</span> <span class="number">0</span> #Transform filename into (<span class="number">1</span>) lower <span class="keyword">case</span> or (<span class="number">2</span>) upper <span class="keyword">case</span></span><br><span class="line"><span class="string">highlight:</span></span><br><span class="line"><span class="label">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="label">  line_number:</span> <span class="literal">true</span></span><br><span class="line"><span class="label">  tab_replace:</span></span><br><span class="line"></span><br><span class="line"># Category &amp; Tag</span><br><span class="line"><span class="string">default_category:</span> uncategorized</span><br><span class="line"><span class="string">category_map:</span></span><br><span class="line"><span class="string">tag_map:</span></span><br><span class="line"></span><br><span class="line"># Archives 默认<span class="number">2</span>,修改为<span class="number">1</span>,只列出标题</span><br><span class="line">## <span class="number">2</span>: Enable pagination</span><br><span class="line">## <span class="number">1</span>: Disable pagination</span><br><span class="line">## <span class="number">0</span>: Fully Disable</span><br><span class="line"><span class="string">archive:</span> <span class="number">1</span></span><br><span class="line"><span class="string">category:</span> <span class="number">1</span></span><br><span class="line"><span class="string">tag:</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"># Server</span><br><span class="line">## Hexo uses Connect <span class="keyword">as</span> a server</span><br><span class="line">## You can customize the logger format <span class="keyword">as</span> defined <span class="keyword">in</span></span><br><span class="line">## <span class="string">http:</span><span class="comment">//www.senchalabs.org/connect/logger.html</span></span><br><span class="line"><span class="string">port:</span> <span class="number">4000</span></span><br><span class="line"><span class="string">logger:</span> <span class="literal">false</span></span><br><span class="line"><span class="string">logger_format:</span></span><br><span class="line"></span><br><span class="line"># Date / Time format</span><br><span class="line">## Hexo uses Moment.js to parse and display date</span><br><span class="line">## You can customize the date format <span class="keyword">as</span> defined <span class="keyword">in</span></span><br><span class="line">## <span class="string">http:</span><span class="comment">//momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="string">date_format:</span> MMM D YYYY</span><br><span class="line"><span class="string">time_format:</span> <span class="string">H:</span><span class="string">mm:</span>ss</span><br><span class="line"></span><br><span class="line"># Pagination</span><br><span class="line">## Set per_page to <span class="number">0</span> to disable pagination</span><br><span class="line"><span class="string">per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="string">pagination_dir:</span> page</span><br><span class="line"></span><br><span class="line"># Disqus</span><br><span class="line"><span class="string">disqus_shortname:</span></span><br><span class="line"></span><br><span class="line"># Extensions</span><br><span class="line">## <span class="string">Plugins:</span> <span class="string">https:</span><span class="comment">//github.com/tommy351/hexo/wiki/Plugins</span></span><br><span class="line">## <span class="string">Themes:</span> <span class="string">https:</span><span class="comment">//github.com/tommy351/hexo/wiki/Themes</span></span><br><span class="line"><span class="string">theme:</span> greyshade #light #modernist</span><br><span class="line"><span class="string">exclude_generator:</span></span><br><span class="line"><span class="label"></span><br><span class="line">plugins:</span></span><br><span class="line">- hexo-generator-feed</span><br><span class="line">- hexo-generator-sitemap</span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line">## <span class="string">Docs:</span> <span class="string">http:</span><span class="comment">//zespia.tw/hexo/docs/deploy.html</span></span><br><span class="line"># 虽然推荐github的repository用https，但SSH clone URL可以避免每次输密码</span><br><span class="line"><span class="string">deploy:</span></span><br><span class="line"><span class="label">  type:</span> github</span><br><span class="line"><span class="label">  repository:</span> git<span class="annotation">@github</span>.<span class="string">com:</span>shmilee/shmilee.github.io.git</span><br><span class="line"><span class="label">  branch:</span> master</span><br></pre></td></tr></table></figure></p>
+<h4 id="多说评论">2. 多说评论</h4>
+<ol style="list-style-type: decimal">
+<li><p>注册:http://duoshuo.com/ , 获得通用代码.</p></li>
+<li><p>主题目录内一般自带disqus,比照相关代码添加duoshuo</p></li>
+</ol>
+<ul>
+<li><a href="https://github.com/shmilee/blog_with_hexo/commit/554a7e01f21f4927c42f93a316b8d750e5bb2704" target="_blank" rel="external">greyshade添加参考</a></li>
+</ul>
+<h4 id="百度分享">3. 百度分享</h4>
+<ol style="list-style-type: decimal">
+<li><p>到<a href="http://share.baidu.com/code" target="_blank" rel="external">百度分享</a>,获取代码.</p></li>
+<li><p>添加到主题, <a href="https://github.com/shmilee/blog_with_hexo/commit/94877388292384854fcd493c8bf1628750e55092" target="_blank" rel="external">greyshade参考</a></p></li>
+</ol>
+<h4 id="theme杂项">4. theme杂项</h4>
+<ul>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/7f07ab9ce1fb41b9018b9ea4e5beefb0de2874ec" target="_blank" rel="external">theme:简体中文</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/6703fccebdc44340e30e5dcc317ad9c949fbc13b" target="_blank" rel="external">添加widgets</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/a94501d283725041057a6e9adb6dc4e2f9085680" target="_blank" rel="external">默认生成categories配置项</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/efa288a463b9f4b94131fe4051dc7a05f2bd7189" target="_blank" rel="external">归档类页面添加底边栏,存放widgets</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/c7088b6e895d8f67c434122f6dd4851a595337c3" target="_blank" rel="external">修改menu + aboutme样式</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/2ca18381a123eae207bca4cf02b841477f031d95" target="_blank" rel="external">social链接，添加微博和email</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/3b194898cbdbc6685400532855557871a1727e2a" target="_blank" rel="external">blockquote 配色</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/e21243bd3213a44055dd992652c0a6594a6fc417" target="_blank" rel="external">404 Page</a></p></li>
+<li><p><a href="https://github.com/shmilee/blog_with_hexo/commit/a3985b49fe61ade3acf40425622d574945ace251" target="_blank" rel="external">forkme on github</a></p></li>
+</ul>
+<p>TODO: 高亮 css; md文本格式</p>
+<h4 id="网站统计百度或google">5. 网站统计：百度或google</h4>
+<h2 id="五hexo常用命令简介">五、hexo常用命令简介</h2>
+<p>来自：http://zespia.tw/hexo/docs/commands.html</p>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init [folder] <span class="comment"># 初始化一个网站</span></span><br><span class="line">$ hexo new [layout] &lt;title&gt; <span class="comment"># 创建新文章</span></span><br><span class="line">$ hexo generate <span class="comment"># 生成静态网页</span></span><br><span class="line">$ hexo server <span class="comment"># 启动服务，以便本地查看</span></span><br><span class="line">$ hexo deploy <span class="comment"># 发布你的blog</span></span><br><span class="line">$ hexo migrate wordpress wordpress.<span class="number">2013</span>-<span class="number">10</span>-<span class="number">03</span>.xml <span class="comment"># 从wp迁移，效果差，仍需要手动调整</span></span><br><span class="line">$ hexo clean <span class="comment"># 清理缓存(db.json)和生成的文件(public)</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p><code>init</code>： If folder isn’t defined, Hexo will setup the website at the current directory. Hexo has 3 default layouts: <code>post</code>, <code>page</code> and <code>draft</code>. Other layouts will be saved in source/_posts by default.</p></li>
+<li><p><code>new</code>： If layout isn’t defined, it’ll be default_layout setting. If the title is more than one word, wrap it with quotation marks.</p></li>
+<li><p><code>generate</code> option： <code>-d</code> Deploy after generate done; <code>-w</code> Watch file changes.</p></li>
+<li><p><code>deploy</code> option： <code>--setup</code> Setup without deployment; <code>--generate</code> Generate before deployment.</p></li>
+</ul>]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo">Hexo</a>! This is a very fast, simple &amp; powerful blog post, powered by Node.js. Check <a href="http://zespia.tw/hexo/docs">documentation</a> to learn how to use.</p>]]>
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://shmilee.github.io/tags/hexo/"/>
+    
+      <category term="computer" scheme="http://shmilee.github.io/categories/computer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ssh方式的翻墙]]></title>
+    <link href="http://shmilee.github.io/2012/11-18-2012-11-18-ssh%E6%96%B9%E5%BC%8F%E7%9A%84%E7%BF%BB%E5%A2%99.html"/>
+    <id>http://shmilee.github.io/2012/11-18-2012-11-18-ssh方式的翻墙.html</id>
+    <published>2012-11-18T11:56:43.000Z</published>
+    <updated>2013-10-03T14:00:18.000Z</updated>
+    <content type="html"><![CDATA[<p>通过ssh来翻墙，必须有一个ssh的代理帐号。</p>
+<a id="more"></a>
+<ul>
+<li><p>搜索一个ssh免费代理。取得ip地址、帐号、密码、端口号。</p></li>
+<li><p>linux在终端下输入命令 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -qTfnN -D <span class="number">7070</span>  xxx@x.x.x.x -p port</span><br></pre></td></tr></table></figure></p></li>
+</ul>
+<p>windows需要小工具：MyEnTunnel或者Putty 等。</p>
+<ul>
+<li>安装Firefox浏览器的扩展AutoProxy</li>
+</ul>
+<p>安装之后，打开 AutoProxy首选项——代理服务器——选择代理服务器，选择ssh -D选项。</p>
+<p>类似扩展： <code>FoxyProxy</code>, chrome的<code>switchySharp</code></p>]]></content>
+    <summary type="html">
+    <![CDATA[<p>通过ssh来翻墙，必须有一个ssh的代理帐号。</p>]]>
+    
+    </summary>
+    
+      <category term="翻墙" scheme="http://shmilee.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
+    
+      <category term="computer" scheme="http://shmilee.github.io/categories/computer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[adb找不到c8650设备]]></title>
+    <link href="http://shmilee.github.io/2012/10-20-2012-10-20-adb%E6%89%BE%E4%B8%8D%E5%88%B0c8650%E8%AE%BE%E5%A4%87.html"/>
+    <id>http://shmilee.github.io/2012/10-20-2012-10-20-adb找不到c8650设备.html</id>
+    <published>2012-10-20T10:41:29.000Z</published>
+    <updated>2013-10-03T14:00:08.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="安装软件">安装软件</h2>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>pacman -<span class="constant">Qsq </span>android</span><br><span class="line">android-sdk</span><br><span class="line">android-sdk-platform-tools</span><br><span class="line">android-udev</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>已加入用户组adbusers</p>
+<p>手机开启，设置》应用程序》开发》usb调试。</p>
+<h2 id="修改usrlibudevrules.d51-android.rules">修改/usr/lib/udev/rules.d/51-android.rules</h2>
+<p>lsusb结果 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">Bus</span> 008 <span class="tag">Device</span> 005: <span class="tag">ID</span> 12<span class="tag">d1</span><span class="pseudo">:1031</span> <span class="tag">Huawei</span> <span class="tag">Technologies</span> <span class="tag">Co</span>., <span class="tag">Ltd</span>.</span><br></pre></td></tr></table></figure></p>
+<p>修改的/usr/lib/udev/rules.d/51-android.rules <figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#       Huawei</span></span><br><span class="line"><span class="variable">SUBSYSTEM=</span>=<span class="string">"usb"</span>, ATTR&#123;idVendor&#125;==<span class="string">"12d1"</span>, <span class="variable">MODE=</span><span class="string">"0660"</span>, <span class="variable">GROUP=</span><span class="string">"adbusers"</span></span><br><span class="line"><span class="variable">SUBSYSTEM=</span>=<span class="string">"usb"</span>, ATTR&#123;idVendor&#125;==<span class="string">"12d1"</span>, ATTR&#123;idProduct&#125;==<span class="string">"1031"</span>, SYMLINK+=<span class="string">"android_adb"</span></span><br><span class="line"><span class="variable">SUBSYSTEM=</span>=<span class="string">"usb"</span>, ATTR&#123;idVendor&#125;==<span class="string">"12d1"</span>, ATTR&#123;idProduct&#125;==<span class="string">"1031"</span>, SYMLINK+=<span class="string">"android_fastboot"</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="启动adb服务">启动adb服务</h2>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl status adb</span><br><span class="line">adb.service - Android Debug Bridge Daemon</span><br><span class="line">   Loaded: loaded (/usr/lib/systemd/system/adb.service; disabled)</span><br><span class="line">   Active: active (running) since Thu, 18 Oct 2012 22:07:26 +0800; 19min ago</span><br><span class="line">  Process: 3435 ExecStart=/opt/android-sdk/platform-tools/adb <span class="operator"><span class="keyword">start</span>-<span class="keyword">server</span> (code=exited, <span class="keyword">status</span>=<span class="number">0</span>/SUCCESS)</span><br><span class="line"> Main PID: <span class="number">3436</span> (adb)</span><br><span class="line">   CGroup: name=systemd:/system/adb.service</span><br><span class="line">   └ <span class="number">3436</span> adb fork-<span class="keyword">server</span> <span class="keyword">server</span></span><br><span class="line"><span class="keyword">Oct</span> <span class="number">18</span> <span class="number">22</span>:<span class="number">07</span>:<span class="number">23</span> arch-lenovo systemd[<span class="number">1</span>]: <span class="keyword">Starting</span> Android Debug Bridge Daemon...</span><br><span class="line"><span class="keyword">Oct</span> <span class="number">18</span> <span class="number">22</span>:<span class="number">07</span>:<span class="number">26</span> arch-lenovo adb[<span class="number">3435</span>]: * daemon <span class="keyword">not</span> running. <span class="keyword">starting</span> it <span class="keyword">now</span> <span class="keyword">on</span> port <span class="number">5037</span> *</span><br><span class="line"><span class="keyword">Oct</span> <span class="number">18</span> <span class="number">22</span>:<span class="number">07</span>:<span class="number">26</span> arch-lenovo adb[<span class="number">3435</span>]: * daemon started successfully *</span><br><span class="line"><span class="keyword">Oct</span> <span class="number">18</span> <span class="number">22</span>:<span class="number">07</span>:<span class="number">26</span> arch-lenovo systemd[<span class="number">1</span>]: Started Android Debug Bridge Daemon.</span></span><br></pre></td></tr></table></figure>
+<p>手机插到usb上，在dev下也找的到 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ll <span class="regexp">/dev/</span>android*</span><br><span class="line">lrwxrwxrwx <span class="number">1</span> root root <span class="number">15</span> <span class="number">10</span>月 <span class="number">18</span> <span class="number">22</span>:<span class="number">41</span> <span class="regexp">/dev/</span>android_adb -&gt; bus<span class="regexp">/usb/</span><span class="number">008</span>/<span class="number">005</span></span><br><span class="line">lrwxrwxrwx <span class="number">1</span> root root <span class="number">15</span> <span class="number">10</span>月 <span class="number">18</span> <span class="number">22</span>:<span class="number">41</span> <span class="regexp">/dev/</span>android_fastboot -&gt; bus<span class="regexp">/usb/</span><span class="number">008</span>/<span class="number">005</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="郁闷的结果啥也没有">郁闷的结果,啥也没有。</h2>
+<figure class="highlight capnproto"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo adb devices</span><br><span class="line"><span class="built_in">List</span> <span class="keyword">of</span> devices attached</span><br></pre></td></tr></table></figure>
+<p>换root也是没有。</p>
+<h2 id="解决">解决：</h2>
+<p>问题出在手机上，C8650是电信的定制机，也就是因为这样，华为弄出了一个自己的USB的链接方式，主要是为了可以实现电信的一些什么天翼的业务，所以在链接电脑的时候使用的不是google模式，而是华为默认的为电信开发的自己的Normal模式，而使用这种模式，adb认不出。</p>
+<p>解决这个问题的方法就是把手机USB的接入模式修改为google的模式即可，步骤如下：</p>
+<ol style="list-style-type: decimal">
+<li>使用电话拨打<em>#</em>#2846579#<em>#</em></li>
+<li>这时会出现一个菜单，选择projectMenu</li>
+<li>选择后台设置</li>
+<li>选择USB模式</li>
+<li>选择Google模式,然后，重新启动机子。</li>
+</ol>
+<p>当再次连接电脑，在控制台中使用adb devices，便可以看得到机子了。</p>]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="安装软件">安装软件</h2>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>pacman -<span class="constant">Qsq </span>android</span><br><span class="line">android-sdk</span><br><span class="line">android-sdk-platform-tools</span><br><span class="line">android-udev</span><br></pre></td></tr></table></figure>]]>
+    
+    </summary>
+    
+      <category term="android" scheme="http://shmilee.github.io/tags/android/"/>
+    
+      <category term="computer" scheme="http://shmilee.github.io/categories/computer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[goagent]]></title>
+    <link href="http://shmilee.github.io/2012/10-12-2012-10-12goagent.html"/>
+    <id>http://shmilee.github.io/2012/10-12-2012-10-12goagent.html</id>
+    <published>2012-10-12T08:29:18.000Z</published>
+    <updated>2013-10-03T13:59:58.000Z</updated>
+    <content type="html"><![CDATA[<p>GoAgent是使用Python和Google App EngineSDK编写的免费代理软件，该软件在中国大陆一般被当作破网软件，用来浏览被中国大陆官方建立的防火长城所屏蔽的网络服务。</p>
+<a id="more"></a>
+<h2 id="如何部署和使用goagent">如何部署和使用goagent？</h2>
+<ol style="list-style-type: decimal">
+<li>申请Google Appengine并创建appid。</li>
+<li>下载goagent稳定版</li>
+<li>修改local.ini中的[gae]下的appid=你的appid(多appid请用|隔开)　</li>
+<li>上传，开服务</li>
+<li>chrome请安装SwitchySharp插件，然后导入这个设置　</li>
+<li>firefox请安装FoxyProxy，Firefox需要导入证书。</li>
+</ol>
+<h2 id="gae注意点">GAE注意点：</h2>
+<p><a href="http://appengine.google.com" target="_blank" rel="external">GAE</a> 每个帐号最多十个app，每个应用每天有1GB免费流量。如果你经常下载或者观看视频，建议多创建几个Google App Engine应用。</p>
+<p>谷歌账户<a href="https://www.google.com/settings" target="_blank" rel="external">设置页面</a>，在安全性-两步认证处，点击修改；启用两步验证。</p>
+<p>为你的Application创建密码，settings》安全》向应用和网站授权，第一次找了好久，上传应用用的到密码。</p>
+<h2 id="goagent注意点">goagent注意点</h2>
+<ul>
+<li>archlinux用pacman安装，主要是写好了systemd 的servie文件。</li>
+</ul>
+<p>配置文件为/etc/goagent<br>[gae]下：<br>appid = 你的appid(多appid请用|隔开)<br>password = app的密码。</p>
+<ul>
+<li>server文件夹里的怎么上传？</li>
+</ul>
+<p>自带的可能由于python有问题。换用google的Python版的Google App Engine SDK 地址：https://developers.google.com/appengine/downloads</p>
+<p>修改server/python 文件夹内 app.yaml文件，把第一行文字改为 application:(你的appid)</p>
+<p>在google_appengine目录下执行： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python2 appcfg.py update path/to/server/python</span><br></pre></td></tr></table></figure></p>
+<p>中间询问你的gmail邮箱，密码是app设置的密码，不是他问的邮箱密码，要不会出错。 这样配置就能成功了。</p>
+<h2 id="总结">总结：</h2>
+<p>安装，设置appid;</p>
+<p>GAE上传，密码，python2 GAE_SDK;</p>
+<p>开启服务，浏览器设置代理</p>
+<h2 id="ps">ps：</h2>
+<ol style="list-style-type: decimal">
+<li><p>解决GoAgent打开https网站SSL证书错误 (安全证书不受信任)<br>1）FireFox-&gt;选项-&gt;高级-&gt;加密-&gt;查看证书-&gt;证书机构-&gt;导入证书, 选择local.crt, 勾选所有项，导入。<br>2）chrome高级设置https/ssl管理中心》授权中心，导入CA.crt, 询问选项全选。</p></li>
+<li><p>chrome请安装SwitchySharp插件, 导入SwitchySharp配置<br>下载地址http://goagent.googlecode.com/files/SwitchyOptions.bak<br>进入SwitchySharp设置界面，点击“导入/导出”》“从文件恢复”，导入刚才下载的SwitchyOptions.bak</p></li>
+</ol>]]></content>
+    <summary type="html">
+    <![CDATA[<p>GoAgent是使用Python和Google App EngineSDK编写的免费代理软件，该软件在中国大陆一般被当作破网软件，用来浏览被中国大陆官方建立的防火长城所屏蔽的网络服务。</p>]]>
+    
+    </summary>
+    
+      <category term="翻墙" scheme="http://shmilee.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
+    
+      <category term="computer" scheme="http://shmilee.github.io/categories/computer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[convert使用简介]]></title>
+    <link href="http://shmilee.github.io/2012/05-19-2012-05-19-convert%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B.html"/>
+    <id>http://shmilee.github.io/2012/05-19-2012-05-19-convert使用简介.html</id>
+    <published>2012-05-19T08:49:08.000Z</published>
+    <updated>2013-10-03T13:59:48.000Z</updated>
+    <content type="html"><![CDATA[<p>最近赶毕业设计，结果出了很多图。要相互比较，还有做动画看物理量随时间的变化。</p>
+<p>结果保存在ps文件中，一个包含7张图，每图一个物理量。ps文件是按时间i命名的。为了批量处理，决定用convert配合shell脚本转换他们。</p>
+<a id="more"></a>
+<h2 id="安装使用imagemagick">安装使用ImageMagick</h2>
+<h4 id="直接将ps或者pdf文件转成jpg">1. 直接将PS或者PDF文件转成jpg</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert -density <span class="number">150</span> -quality <span class="number">100</span> -resize <span class="number">800</span>x <span class="string">"file.ps"</span> <span class="string">"result.jpg"</span></span><br></pre></td></tr></table></figure>
+<p>将file.pdf文件输出为result.jpg文件<br>如果PDF有多页，图像将自动以result-0.jpg’ , ‘result-1.jpg’…形式输出。</p>
+<blockquote>
+<p>-density 图像分辨率<br> -quality 图像质量</p>
+</blockquote>
+<h4 id="图片截取">2. 图片截取</h4>
+<p>指定位置，由于每张图只占一页的部分，靠近左下。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert -crop widthxheight&#123;+-&#125;x&#123;+-&#125;y&#123;%&#125;</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>width 子图片宽度<br> height 子图片高度<br> x 为正数时为从区域左上角的x坐标,为负数时,左上角坐标为0,然后从截出的子图片右边减去x象素宽度.<br> y 为正数时为从区域左上角的y坐标,为负数时,左上角坐标为0,然后从截出的子图片上边减去y象素高度.</p>
+</blockquote>
+<p>如: <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ convert -crop <span class="number">300</span>x400+<span class="number">10</span>+<span class="number">10</span> src.jpg dest.jpg <span class="comment"># 从src.jpg坐标为x:10 y:10截取300x400的图片存为dest.jpg</span></span><br><span class="line"></span><br><span class="line">$ convert -crop <span class="number">300</span>x400-<span class="number">10</span>+<span class="number">10</span> src.jpg dest.jpg <span class="comment"># 从src.jpg坐标为x:0 y:10截取290x400的图片存为dest.jpg</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="生成gif">3. 生成gif</h4>
+<blockquote>
+<p>把当前目录下的所有bmp文件合成一个gif图片动画, 每帧间隔0ms, 重复播放.<br> -delay n 迟延n*10毫秒 -loop n 播放n轮, 0表示不断地重复播放</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert -delay <span class="number">0</span> *.bmp -loop <span class="number">0</span> animated.gif</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>So to create an animation we use the convert command</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert -delay <span class="number">50</span> frame1.gif frame1.gif frame1.gif -loop <span class="number">0</span> animated.gif</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Also if we want to add a pause between each loop</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert -delay <span class="number">50</span> frame1.gif -delay <span class="number">100</span> frame1.gif -delay <span class="number">150</span> frame1.gif -loop <span class="number">0</span> -pause <span class="number">200</span> animated.gif</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Also using convert we can combine 2 animated gifs</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ convert anim1.gif anim2.gif combined.gif</span><br></pre></td></tr></table></figure>
+<h4 id="合并图片">4. 合并图片</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 横向</span></span><br><span class="line">$ convert +append <span class="number">6</span>-<span class="variable">$f</span>.png <span class="number">7</span>-<span class="variable">$f</span>.png tmp4.png</span><br><span class="line"><span class="comment"># 纵向</span></span><br><span class="line">$ convert -append tmp1.png tmp2.png tmp3.png tmp4.png c<span class="variable">$f</span>.png</span><br></pre></td></tr></table></figure>
+<h2 id="最终的脚本">最终的脚本</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span></span><br><span class="line"><span class="comment">## ps转换为png,png适合单独引用</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"converting png ..."</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="number">0</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">convert -crop <span class="number">440</span>x210+<span class="number">60</span>+<span class="number">440</span> -quality <span class="number">100</span> <span class="variable">$f</span>.ps <span class="variable">$f</span>.png</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">echo</span>  <span class="string">"composit 8 png files"</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="number">0</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">convert +append <span class="number">0</span>-<span class="variable">$f</span>.png <span class="number">1</span>-<span class="variable">$f</span>.png tmp1.png</span><br><span class="line">convert +append <span class="number">2</span>-<span class="variable">$f</span>.png <span class="number">3</span>-<span class="variable">$f</span>.png tmp2.png</span><br><span class="line">convert +append <span class="number">4</span>-<span class="variable">$f</span>.png <span class="number">5</span>-<span class="variable">$f</span>.png tmp3.png</span><br><span class="line">convert +append <span class="number">6</span>-<span class="variable">$f</span>.png <span class="number">7</span>-<span class="variable">$f</span>.png tmp4.png</span><br><span class="line">convert -append tmp1.png tmp2.png tmp3.png tmp4.png c<span class="variable">$f</span>.png</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="comment">## ps转换成jpg，用于制作动画</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"converting jpg ..."</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="number">0</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">convert -crop <span class="number">440</span>x210+<span class="number">60</span>+<span class="number">440</span> -quality <span class="number">100</span> <span class="variable">$f</span>.ps <span class="variable">$f</span>.jpg</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="comment">## jpg做成gif动画，8张</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"converting gif ..."</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="number">0</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span>;<span class="keyword">do</span> convert -delay <span class="number">50</span> *-<span class="variable">$f</span>.jpg -loop <span class="number">0</span> <span class="variable">$f</span>.gif; <span class="keyword">done</span></span><br><span class="line"><span class="comment">## 删除jpg文件</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"rm all jpg files, tmp files"</span></span><br><span class="line">rm *.jpg</span><br><span class="line">rm tmp*.png</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近赶毕业设计，结果出了很多图。要相互比较，还有做动画看物理量随时间的变化。</p>
+<p>结果保存在ps文件中，一个包含7张图，每图一个物理量。ps文件是按时间i命名的。为了批量处理，决定用convert配合shell脚本转换他们。</p>]]>
+    
+    </summary>
+    
+      <category term="convert" scheme="http://shmilee.github.io/tags/convert/"/>
+    
+      <category term="computer" scheme="http://shmilee.github.io/categories/computer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[mplayer网络视频]]></title>
+    <link href="http://shmilee.github.io/2012/02-21-2012-02-21-mplayer%E7%BD%91%E7%BB%9C%E8%A7%86%E9%A2%91.html"/>
+    <id>http://shmilee.github.io/2012/02-21-2012-02-21-mplayer网络视频.html</id>
+    <published>2012-02-21T11:10:54.000Z</published>
+    <updated>2013-10-03T13:59:40.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>Q: 如何用mplayer录制视频,比如录制在线电影,电视?</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mplayer mms://*.*.*.*/test.asf -dumpstream -dumpfile MyMovie.asf</span><br></pre></td></tr></table></figure>
+<p>可以把mms ,rtsp.http.ftp….等协议的视频流录制下来,保存为 MyMovie.asf文件.</p>
+<a id="more"></a>
+<ul>
+<li><strong>Q: 如何用mplayer查看摄像头？</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mplayer tv:// -tv driver=v4l2:input=<span class="number">0</span>:width=<span class="number">640</span>:height=<span class="number">480</span>:fps=<span class="number">25</span> -vo x11</span><br><span class="line">$ dd <span class="keyword">if</span>=/dev/video0 | mplayer tv://device=/dev/stdin</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>Q: 如何通过ssh用mplayer查看远程摄像头</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -p xxx xxx@xxx -Y <span class="string">"mplayer tv://device=/dev/video0"</span></span><br><span class="line">$ ssh -p xxx xxx@xxx -Y <span class="string">"mplayer -tv device=/dev/video0:width=320:height=240:fps=25 tv://"</span></span><br><span class="line"><span class="comment"># 本地测试</span></span><br><span class="line">$ ssh localhost dd <span class="keyword">if</span>=/dev/video0 | mplayer tv://device=/dev/stdin</span><br><span class="line"><span class="comment"># 播放mp3</span></span><br><span class="line">$ ssh user@<span class="number">192.168</span>.<span class="number">1.101</span> <span class="string">"cat music.mp3"</span> | mplayer -</span><br></pre></td></tr></table></figure>
+<p>接近的 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 本地</span></span><br><span class="line">$ ffmpeg  <span class="operator">-f</span> video4linux2 <span class="operator">-s</span> <span class="number">640</span>*<span class="number">480</span> -i /dev/video0  <span class="operator">-f</span> flv file</span><br><span class="line"><span class="comment"># 远程</span></span><br><span class="line">$ ssh user@xxx <span class="string">"cat file"</span> | mplayer -</span><br><span class="line"></span><br><span class="line"><span class="comment"># 整合</span></span><br><span class="line">$ ssh user@xxx <span class="string">"ffmpeg  -f video4linux2 -s 640*480 -i /dev/video0  -f flv file &amp; sleep 15s;cat file"</span> | mplayer -</span><br></pre></td></tr></table></figure></p>]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li><strong>Q: 如何用mplayer录制视频,比如录制在线电影,电视?</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mplayer mms://*.*.*.*/test.asf -dumpstream -dumpfile MyMovie.asf</span><br></pre></td></tr></table></figure>
+<p>可以把mms ,rtsp.http.ftp….等协议的视频流录制下来,保存为 MyMovie.asf文件.</p>]]>
+    
+    </summary>
+    
+      <category term="mplayer" scheme="http://shmilee.github.io/tags/mplayer/"/>
+    
+      <category term="computer" scheme="http://shmilee.github.io/categories/computer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[从这里开始]]></title>
+    <link href="http://shmilee.github.io/2012/01-10-2012-01-10-%E4%BB%8E%E8%BF%99%E9%87%8C%E5%BC%80%E5%A7%8B.html"/>
+    <id>http://shmilee.github.io/2012/01-10-2012-01-10-从这里开始.html</id>
+    <published>2012-01-10T06:19:15.000Z</published>
+    <updated>2013-10-03T13:55:00.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>　<br>绿蚁新醅酒，红泥小火炉。<br>晚来天欲雪，能饮一杯无?<br>　　　　　　　－－[唐] 白居易</p>
+</blockquote>
+<p>　　<br>生活，就如一首简单的诗</p>
+<p>没有华丽的语句，没有传奇的情节</p>
+<p>如此的平平淡淡，却总能让我心头一暖</p>
+<a id="more"></a>
+<p>　　<br>岁月匆匆，那些年</p>
+<p>我的点点滴滴</p>
+<p>像一片片雪花</p>
+<p>来不及看清它的美</p>
+<p>却已零落，破碎</p>
+<p>而我</p>
+<p>如同一个失忆者</p>
+<p>苦苦寻找自己的青春</p>
+<p>却劳而无获</p>
+<p>　　<br>此刻</p>
+<p>有了自己的小天地</p>
+<p>我要从这里开始</p>
+<p>无拘无束的</p>
+<p>拾起</p>
+<p>那从心头悄悄溜走的</p>
+<p>一点一滴</p>
+<p>珍藏在这里</p>]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>　<br>绿蚁新醅酒，红泥小火炉。<br>晚来天欲雪，能饮一杯无?<br>　　　　　　　－－[唐] 白居易</p>
+</blockquote>
+<p>　　<br>生活，就如一首简单的诗</p>
+<p>没有华丽的语句，没有传奇的情节</p>
+<p>如此的平平淡淡，却总能让我心头一暖</p>]]>
+    
+    </summary>
+    
+      <category term="风景旧曾谙" scheme="http://shmilee.github.io/tags/%E9%A3%8E%E6%99%AF%E6%97%A7%E6%9B%BE%E8%B0%99/"/>
+    
+      <category term="essay" scheme="http://shmilee.github.io/categories/essay/"/>
+    
+  </entry>
+  
+</feed>
